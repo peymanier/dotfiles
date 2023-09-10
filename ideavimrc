@@ -45,6 +45,7 @@ nnoremap <leader>dv :action UnsplitAll <CR>
 nnoremap <leader>l :action NextSplitter <CR>
 
 " greatest maps
+gh
 nnoremap gh :action Back <CR>
 nnoremap gl :action Forward <CR>
 

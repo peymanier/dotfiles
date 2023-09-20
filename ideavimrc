@@ -67,3 +67,7 @@ nnoremap [c :action VcsShowPrevChangeMarker <CR>
 ""
 nnoremap <c-y> :action QuickJavaDoc<cr>
 nnoremap <c-x> :action ShowErrorDescription<cr>
+
+" replace currently selected text with default register
+" without yanking it
+vnoremap <leader>p "_dP

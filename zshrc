@@ -139,3 +139,7 @@ bindkey -M vicmd 'y' vi-yank-xclip
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export MODULAR_HOME="/Users/peyman627/.modular"
+export PATH="/Users/peyman627/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi

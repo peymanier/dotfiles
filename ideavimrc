@@ -39,11 +39,6 @@ vnoremap <leader>f :action ReformatCode <CR>
 nnoremap <leader>o :action OptimizeImports <CR>
 vnoremap <leader>o :action OptimizeImports <CR>
 
-" splits
-nnoremap <leader>v :action SplitVertically <CR>
-nnoremap <leader>dv :action UnsplitAll <CR>
-nnoremap <leader>l :action NextSplitter <CR>
-
 " greatest maps
 gh
 nnoremap gh :action Back <CR>
@@ -54,9 +49,6 @@ map mc <A-n>
 map mx <A-x>
 map mp <A-p>
 
-" nerd tree
-map <leader>nt :NERDTreeToggle<CR>
-
 " comments
 Plug 'tpope/vim-commentary'
 
@@ -65,7 +57,7 @@ nnoremap ]c :action VcsShowNextChangeMarker <CR>
 nnoremap [c :action VcsShowPrevChangeMarker <CR>
 
 ""
-nnoremap <c-y> :action QuickJavaDoc<cr>
+nnoremap <c-o> :action QuickJavaDoc<cr>
 nnoremap <c-x> :action ShowErrorDescription<cr>
 
 " replace currently selected text with default register

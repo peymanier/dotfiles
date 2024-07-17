@@ -2,10 +2,12 @@ require("packer").startup(function(use)
     use { "wbthomason/packer.nvim" }
     use { "tpope/vim-commentary" }
     use { "tpope/vim-fugitive" }
-    use { "airblade/vim-gitgutter" }
-    use { "preservim/nerdtree" }
     use { "folke/tokyonight.nvim" }
+    use { 'm4xshen/autoclose.nvim' }
 end)
+
+-- autoclose
+require("autoclose").setup()
 
 -- COLORSCHEME
 vim.cmd("colorscheme tokyonight")
@@ -31,7 +33,6 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
@@ -50,28 +51,5 @@ vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>cc", ":noh<CR>")
 
-vim.keymap.set("i", '"', '""<left>')
-vim.keymap.set("i", "'", "''<left>")
-vim.keymap.set("i", "(", "()<left>")
-vim.keymap.set("i", "[", "[]<left>")
-vim.keymap.set("i", "{", "{}<left>")
-vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
-vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
-
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
-vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>j", ":wincmd j<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>k", ":wincmd k<CR>", { noremap = true })
-
--- gitgutter
-vim.keymap.set("n", "<leader>cs", "<Plug>(GitGutterStageHunk)")
-vim.keymap.set("x", "<leader>cs", "<Plug>(GitGutterStageHunk)")
-vim.keymap.set("n", "<leader>cu", "<Plug>(GitGutterUndoHunk)")
-vim.keymap.set("n", "<leader>cp", "<Plug>(GitGutterPreviewHunk)")
-
--- nerdtree
-vim.keymap.set("n", "<leader>ne", ":NERDTree<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>nt", ":NERDTreeToggle<CR>", { noremap = true })

@@ -1,7 +1,6 @@
 require("packer").startup(function(use)
     use { "wbthomason/packer.nvim" }
     use { "tpope/vim-commentary" }
-    use { "tpope/vim-fugitive" }
     use { "folke/tokyonight.nvim" }
     use { 'm4xshen/autoclose.nvim' }
 end)
@@ -9,7 +8,7 @@ end)
 -- autoclose
 require("autoclose").setup()
 
--- COLORSCHEME
+-- colorscheme
 vim.cmd("colorscheme tokyonight")
 
 -- options

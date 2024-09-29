@@ -104,10 +104,8 @@ ulimit -n 8096
 
 alias pip=pip3
 alias python=python3
-alias lightup="source venv/bin/activate"
 
 export PATH=${PATH}:/usr/local/mysql/bin/
-export PATH=$PATH:/Users/peyman627/Library/Python/3.9/bin
 
 export GOROOT="/usr/local/go"
 export GOPATH="/Users/peyman627/go"

@@ -140,4 +140,5 @@ bindkey -M vicmd 'y' vi-yank-xclip
 export MODULAR_HOME="/Users/peyman627/.modular"
 export PATH="/Users/peyman627/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+export PATH="$PATH:/Users/peyman627/.modular/bin"
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi

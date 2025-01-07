@@ -1,0 +1,51 @@
+{
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "space",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.navigateBackInNavigationLocations"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.navigateForwardInNavigationLocations"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "c"
+            ],
+            "commands": [
+                "workbench.action.editor.nextChange"
+            ],
+            "when": "chat.hasEditorModifications && editorFocus || chat.hasNotebookEditorModifications && editorFocus"
+        },
+        {
+            "before": [
+                "[",
+                "c"
+            ],
+            "commands": [
+                "workbench.action.editor.previousChange"
+            ],
+            "when": "chat.hasEditorModifications && editorFocus || chat.hasNotebookEditorModifications && editorFocus"
+        }
+    ]
+}

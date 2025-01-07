@@ -39,8 +39,7 @@ vnoremap <leader>f :action ReformatCode <CR>
 nnoremap <leader>o :action OptimizeImports <CR>
 vnoremap <leader>o :action OptimizeImports <CR>
 
-" greatest maps
-gh
+" greatest maps gh
 nnoremap gh :action Back <CR>
 nnoremap gl :action Forward <CR>
 

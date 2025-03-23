@@ -56,9 +56,8 @@ nnoremap ]c :action VcsShowNextChangeMarker <CR>
 nnoremap [c :action VcsShowPrevChangeMarker <CR>
 
 ""
-nnoremap <c-o> :action QuickJavaDoc<cr>
-nnoremap <c-x> :action ShowErrorDescription<cr>
+nnoremap <c-o> :action ShowErrorDescription<cr>
 
 " replace currently selected text with default register
 " without yanking it
-vnoremap <leader>p "_dP
+vnoremap <leader>p "_dPset ideajoin

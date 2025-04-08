@@ -61,3 +61,6 @@ nnoremap <c-o> :action ShowErrorDescription<cr>
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dPset ideajoin
+
+" empty lines insertion
+map <Enter> o<ESC>

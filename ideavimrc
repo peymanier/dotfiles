@@ -59,8 +59,7 @@ nnoremap [c :action VcsShowPrevChangeMarker <CR>
 nnoremap <c-o> :action ShowErrorDescription<cr>
 
 " replace currently selected text with default register
-" without yanking it
-vnoremap <leader>p "_dPset ideajoin
+vnoremap <Leader>p "_dP
 
 " empty lines insertion
 map <Enter> o<ESC>

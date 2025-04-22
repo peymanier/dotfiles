@@ -144,4 +144,3 @@ export PATH="$PATH:/Users/peyman627/.modular/bin"
 
 # Foundry
 export PATH="$PATH:/Users/peyman627/.foundry/bin"
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi

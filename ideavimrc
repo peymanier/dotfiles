@@ -22,6 +22,7 @@ set incsearch
 set hlsearch
 set scrolloff=8
 set history=1000
+set ideajoin
 
 " clear highlighting
 nnoremap <leader>cc :noh<CR>

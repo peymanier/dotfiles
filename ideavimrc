@@ -87,9 +87,9 @@ sethandler <C-J> a:ide
 sethandler <C-K> a:ide
 sethandler <C-L> a:ide
 sethandler <C-M> a:ide
-sethandler <C-N> a:vim
+sethandler <C-N> a:ide
 sethandler <C-O> a:vim
-sethandler <C-P> a:vim
+sethandler <C-P> a:ide
 sethandler <C-R> a:vim
 sethandler <C-S> a:ide
 sethandler <C-T> a:ide

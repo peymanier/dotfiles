@@ -62,9 +62,6 @@ nnoremap <c-o> :action ShowErrorDescription<cr>
 " replace currently selected text with default register
 vnoremap <Leader>p "_dP
 
-" empty lines insertion
-map <Enter> o<ESC>
-
 sethandler <S-CR> a:ide
 sethandler <S-Left> a:ide
 sethandler <S-Up> a:ide

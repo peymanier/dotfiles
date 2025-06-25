@@ -51,9 +51,13 @@ export PATH="$PATH:/Users/peyman627/.modular/bin"
 # Foundry
 export PATH="$PATH:/Users/peyman627/.foundry/bin"
 
+# Python3.12
+export PATH="$PATH:$HOME/Library/Python/3.12/bin"
+
 # Jetbrains
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 
 # vi-mode setup
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
+
 

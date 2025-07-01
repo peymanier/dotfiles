@@ -28,11 +28,11 @@ source $ZSH/oh-my-zsh.sh
 alias pip=pip3
 alias python=python3
 
-export PATH=${PATH}:/usr/local/mysql/bin/
-
 export GOROOT="/usr/local/go"
 export GOPATH="/Users/peyman627/go"
 export GOBIN=$(go env GOPATH)/bin
+
+export PATH=${PATH}:/usr/local/mysql/bin/
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -59,5 +59,3 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 
 # vi-mode setup
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
-
-

@@ -59,3 +59,4 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 
 # vi-mode setup
 # ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
+KEYTIMEOUT=1

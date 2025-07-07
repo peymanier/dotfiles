@@ -14,9 +14,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jeffreytse/zsh-vi-mode
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-
 # Load the theme.
 antigen theme bureau
 
@@ -57,6 +54,7 @@ export PATH="$PATH:$HOME/Library/Python/3.12/bin"
 # Jetbrains
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 
+export KEYTIMEOUT=1
+
 # vi-mode setup
 # ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
-KEYTIMEOUT=1

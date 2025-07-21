@@ -1,6 +1,7 @@
-" easy life
-inoremap jj <Esc>
 let mapleader = " "
+
+nnoremap H ^
+nnoremap L $
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -25,7 +26,7 @@ set history=1000
 set ideajoin
 
 " clear highlighting
-nnoremap <leader>cc :noh<CR>
+nnoremap <ESC> :noh<CR>
 
 " option selection
 inoremap <expr> <down> ((pumvisible())?("\<C-n>"):("\<down>"))
@@ -43,6 +44,7 @@ vnoremap <leader>o :action OptimizeImports <CR>
 " greatest maps gh
 nnoremap gh :action Back <CR>
 nnoremap gl :action Forward <CR>
+nnoremap g; :e #<CR>
 
 " multiple cursors
 map mc <A-n>

@@ -20,7 +20,8 @@ antigen theme bureau
 # Tell Antigen that you're done.
 antigen apply
 
-source $ZSH/oh-my-zsh.sh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 alias pip=pip3
 alias python=python3
@@ -30,10 +31,6 @@ export GOPATH="/Users/peyman627/go"
 export GOBIN=$(go env GOPATH)/bin
 
 export PATH=${PATH}:/usr/local/mysql/bin/
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -46,7 +43,7 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export PATH="$PATH:/Users/peyman627/.modular/bin"
 
 # Foundry
-export PATH="$PATH:/Users/peyman627/.foundry/bin"
+# export PATH="$PATH:/Users/peyman627/.foundry/bin"
 
 # Python3.12
 export PATH="$PATH:$HOME/Library/Python/3.12/bin"

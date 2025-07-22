@@ -25,6 +25,10 @@ set scrolloff=8
 set history=1000
 set ideajoin
 
+" search
+nnoremap <leader>sg :action FindInPath<CR>
+nnoremap <leader>sf :action GotoFile<CR>
+
 " clear highlighting
 nnoremap <ESC> :noh<CR>
 
@@ -58,8 +62,8 @@ Plug 'tpope/vim-commentary'
 nnoremap ]c :action VcsShowNextChangeMarker <CR>
 nnoremap [c :action VcsShowPrevChangeMarker <CR>
 
-""
-nnoremap <c-o> :action ShowErrorDescription<cr>
+" show error description
+nnoremap <leader>d :action ShowErrorDescription<cr>
 
 " replace currently selected text with default register
 vnoremap <Leader>p "_dP

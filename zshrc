@@ -17,11 +17,11 @@ antigen bundle jeffreytse/zsh-vi-mode
 # Load the theme.
 antigen theme bureau
 
+# fzf   
+antigen bundle Aloxaf/fzf-tab
+
 # Tell Antigen that you're done.
 antigen apply
-
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
 
 alias pip=pip3
 alias python=python3
@@ -55,3 +55,4 @@ export KEYTIMEOUT=1
 
 # vi-mode setup
 # ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
+

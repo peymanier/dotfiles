@@ -1,7 +1,9 @@
 let mapleader = " "
 
 nnoremap H ^
+vnoremap H ^
 nnoremap L $
+vnoremap L $
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
@@ -12,7 +14,8 @@ set NERDTree
 set multiple-cursors
 set number
 set relativenumber
-set noignorecase
+set ignorecase
+set smartcase
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4

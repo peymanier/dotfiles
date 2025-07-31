@@ -15,7 +15,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle jeffreytse/zsh-vi-mode
 
 # Load the theme.
-antigen theme bureau
+THEME=bureau 
+antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 
 # fzf   
 antigen bundle Aloxaf/fzf-tab

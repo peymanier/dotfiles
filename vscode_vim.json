@@ -1,12 +1,106 @@
 {
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "terminal.integrated.fontSize": 16,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f87",
+        "statusBar.noFolderBackground": "#005f87",
+        "statusBar.debuggingBackground": "#005f87",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": null
+    },
+    "[json]": {
+        "editor.defaultFormatter": null
+    },
+    "workbench.sideBar.location": "left",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".vscode": true,
+        "**/*.pyc": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.editor.enablePreview": false,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "first",
+    "workbench.statusBar.visible": true,
+    "editor.find.autoFindInSelection": "never",
+    "material-icon-theme.folders.associations": {
+        "global_state": "global",
+        "ui": "layout",
+        "bloc": "controller"
+    },
+    "editor.fontLigatures": false,
+    "terminal.integrated.minimumContrastRatio": 7,
+    "terminal.integrated.letterSpacing": 1.2,
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.txt": "default"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "redhat.telemetry.enabled": false,
+    "editor.guides.indentation": false,
+    "scm.inputFontSize": 14,
+    "editor.fontSize": 16,
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
+    "go.toolsManagement.autoUpdate": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vim.useSystemClipboard": true,
+    "vim.digraphs": {},
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "space",
-                "f"
+                "H"
             ],
-            "commands": [
-                "workbench.action.files.save"
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
             ]
         },
         {
@@ -29,6 +123,33 @@
         },
         {
             "before": [
+                "g",
+                ";"
+            ],
+            "commands": [
+                "workbench.action.openPreviousRecentlyUsedEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "T"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
                 "]",
                 "c"
             ],
@@ -46,6 +167,103 @@
                 "workbench.action.editor.previousChange"
             ],
             "when": "chat.hasEditorModifications && editorFocus || chat.hasNotebookEditorModifications && editorFocus"
+        },
+        {
+            "before": [
+                "]",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ],
+            "when": "chat.hasEditorModifications && editorFocus || chat.hasNotebookEditorModifications && editorFocus"
+        },
+        {
+            "before": [
+                "[",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ],
+            "when": "chat.hasEditorModifications && editorFocus || chat.hasNotebookEditorModifications && editorFocus"
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "g"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "d"
+            ],
+            "commands": [
+                "workbench.actions.view.problems"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r",
+                "n"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
         }
-    ]
+    ],
+    "workbench.startupEditor": "none",
+    "remote.defaultExtensionsIfInstalledLocally": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github"
+    ],
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "vim.targets.smartQuotes.enable": false,
+    "vim.targets.smartQuotes.breakThroughLines": false,
+    "vim.targets.smartQuotes.aIncludesSurroundingSpaces": false,
+    "vim.targets.bracketObjects.enable": false,
+    "vim.surround": false,
+    "vim.leader": " ",
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": true,
+    "vim.timeout": 500,
+    "vim.visualstar": true
 }

@@ -1,17 +1,27 @@
 [
     {
-        "key": "ctrl+;",
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
         "command": "workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+y",
-        "command": "editor.action.inlineSuggest.commit",
-        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     },
     {
         "key": "ctrl+y",
         "command": "-extension.vim_ctrl+y",
         "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
     },
     {
         "key": "ctrl+y",
@@ -38,6 +48,10 @@
         "when": "editorTextFocus && @inlineDiffs.nextChange.isActiveEditorWithDiffs"
     },
     {
+        "key": "alt+j",
+        "command": "search.action.focusNextSearchResult"
+    },
+    {
         "key": "alt+k",
         "command": "-editor.action.inlineDiffs.previousChange",
         "when": "editorTextFocus && @inlineDiffs.previousChange.isActiveEditorWithDiffs"
@@ -50,10 +64,6 @@
     {
         "key": "alt+k",
         "command": "search.action.focusPreviousSearchResult"
-    },
-    {
-        "key": "alt+j",
-        "command": "search.action.focusNextSearchResult"
     },
     {
         "key": "alt+m",

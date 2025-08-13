@@ -78,11 +78,19 @@
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
+        "key": "cmd+9",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
         "key": "cmd+1",
         "command": "-workbench.action.focusFirstEditorGroup"
     },
     {
         "key": "cmd+1",
-        "command": "workbench.action.focusSideBar"
+        "command": "workbench.files.action.focusFilesExplorer"
     },
 ]

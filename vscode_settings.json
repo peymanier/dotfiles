@@ -18,6 +18,7 @@
         "*.ipynb": "jupyter-notebook",
         "*.txt": "default"
     },
+    "workbench.layoutControl.enabled": false,
     "catppuccin.italicComments": false,
     "catppuccin.italicKeywords": false,
     "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
@@ -36,7 +37,7 @@
     "editor.find.autoFindInSelection": "never",
     "editor.fontLigatures": true,
     "editor.guides.indentation": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "window.zoomLevel": 0.8,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -62,6 +63,7 @@
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.minimumContrastRatio": 7,
     "terminal.integrated.letterSpacing": 1.2,
+    "gitlens.currentLine.enabled": false,
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"

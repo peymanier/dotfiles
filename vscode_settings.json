@@ -35,9 +35,8 @@
     "editor.tabCompletion": "on",
     "editor.suggestSelection": "first",
     "editor.find.autoFindInSelection": "never",
-    "editor.fontLigatures": true,
     "editor.guides.indentation": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "window.zoomLevel": 0.8,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"

@@ -7,6 +7,7 @@
     "workbench.sideBar.location": "left",
     "workbench.editor.enablePreview": false,
     "workbench.statusBar.visible": true,
+    "workbench.layoutControl.enabled": false,
     "workbench.colorCustomizations": {
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
@@ -18,7 +19,6 @@
         "*.ipynb": "jupyter-notebook",
         "*.txt": "default"
     },
-    "workbench.layoutControl.enabled": false,
     "catppuccin.italicComments": false,
     "catppuccin.italicKeywords": false,
     "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
@@ -36,7 +36,7 @@
     "editor.suggestSelection": "first",
     "editor.find.autoFindInSelection": "never",
     "editor.guides.indentation": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "window.zoomLevel": 0.8,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -119,6 +119,16 @@
             ],
             "after": [
                 "$"
+            ]
+        },
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
             ]
         },
         {
@@ -318,4 +328,5 @@
     "vim.smartRelativeLine": true,
     "vim.timeout": 500,
     "vim.visualstar": true,
+    "vim.hlsearch": true
 }

@@ -4,7 +4,6 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
-    "workbench.sideBar.location": "left",
     "workbench.editor.enablePreview": false,
     "workbench.statusBar.visible": true,
     "workbench.colorCustomizations": {
@@ -19,6 +18,7 @@
         "*.txt": "default"
     },
     "workbench.layoutControl.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "catppuccin.italicComments": false,
     "catppuccin.italicKeywords": false,
     "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
@@ -36,9 +36,10 @@
     "editor.suggestSelection": "first",
     "editor.find.autoFindInSelection": "never",
     "editor.guides.indentation": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "window.zoomLevel": 0.8,
     "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -120,6 +121,16 @@
             ],
             "after": [
                 "$"
+            ]
+        },
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
             ]
         },
         {
@@ -319,4 +330,5 @@
     "vim.smartRelativeLine": true,
     "vim.timeout": 500,
     "vim.visualstar": true,
+    "vim.hlsearch": true
 }

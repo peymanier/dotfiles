@@ -31,6 +31,8 @@ set ideajoin
 " search
 nnoremap <leader>sg :action FindInPath<CR>
 nnoremap <leader>sf :action GotoFile<CR>
+nnoremap <leader>sd :action ActivateProblemsViewToolWindow<CR>
+nnoremap <leader>d :action ShowErrorDescription<cr>
 
 " clear highlighting
 nnoremap <ESC> :noh<CR>
@@ -44,14 +46,7 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 
 " reformat
 nnoremap <leader>f :action ReformatCode <CR>
-vnoremap <leader>f :action ReformatCode <CR>
 nnoremap <leader>o :action OptimizeImports <CR>
-vnoremap <leader>o :action OptimizeImports <CR>
-
-" greatest maps gh
-nnoremap gh :action Back <CR>
-nnoremap gl :action Forward <CR>
-nnoremap g; :e #<CR>
 
 " multiple cursors
 map mc <A-n>
@@ -61,15 +56,27 @@ map mp <A-p>
 " comments
 Plug 'tpope/vim-commentary'
 
-" changes
+" navigation
 nnoremap ]c :action VcsShowNextChangeMarker <CR>
 nnoremap [c :action VcsShowPrevChangeMarker <CR>
 
-" show error description
-nnoremap <leader>d :action ShowErrorDescription<cr>
+nnoremap ]d :action GotoNextError<CR>
+nnoremap [d :action GotoPreviousError<CR>
+
+nnoremap gh :action Back <CR>
+nnoremap gl :action Forward <CR>
+nnoremap g; :e #<CR>
+
+" vcs
+nnoremap <leader>hr :action Vcs.RollbackChangedLines<CR>
 
 " replace currently selected text with default register
 vnoremap <Leader>p "_dP
+
+" lsp
+nnoremap grn :action RenameElement<CR>
+nnoremap gra :action ShowIntentionActions<CR>
+nnoremap grr :action FindUsages<CR>
 
 sethandler <S-CR> a:ide
 sethandler <S-Left> a:ide

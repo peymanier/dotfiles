@@ -26,7 +26,7 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.rulers": [
         80,
         120
@@ -55,9 +55,9 @@
     "[python]": {
         // "editor.defaultFormatter": "ms-python.autopep8",
         "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports": "explicit"
+        // }
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -302,20 +302,28 @@
             "before": [
                 "<leader>",
                 "h",
-                "d"
+                "p"
             ],
             "commands": [
-                "git.openChange"
+                "editor.action.dirtydiff.next"
             ]
         },
         {
             "before": [
                 "<leader>",
-                "h",
-                "p"
+                "f"
             ],
             "commands": [
-                "editor.action.dirtydiff.next"
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "commands": [
+                "editor.action.organizeImports"
             ]
         }
     ],

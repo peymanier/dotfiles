@@ -35,7 +35,7 @@ nnoremap <leader>sd :action ActivateProblemsViewToolWindow<CR>
 nnoremap <leader>d :action ShowErrorDescription<cr>
 
 " clear highlighting
-nnoremap <ESC> :noh<CR>
+nnoremap <leader>cc :noh<CR>
 
 " option selection
 inoremap <expr> <down> ((pumvisible())?("\<C-n>"):("\<down>"))

@@ -1,0 +1,15 @@
+<code_scheme name="Default" version="173">
+  <option name="AUTODETECT_INDENTS" value="false" />
+  <SqlCodeStyleSettings version="7">
+    <option name="QUERY_EL_LINE" value="101" />
+    <option name="SUBQUERY_OPENING" value="1" />
+    <option name="SUBQUERY_CONTENT" value="2" />
+    <option name="SUBQUERY_CLOSING" value="6" />
+    <option name="SUBQUERY_PAR_SPACE_BEFORE" value="1" />
+    <option name="WITH_EL_LINE" value="1" />
+    <option name="WITH_EL_COMMA" value="1" />
+    <option name="TABLE_OPENING" value="1" />
+    <option name="TABLE_CONTENT" value="2" />
+    <option name="TABLE_CLOSING" value="3" />
+  </SqlCodeStyleSettings>
+</code_scheme>

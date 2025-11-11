@@ -60,7 +60,6 @@ fpath=(/Users/peyman627/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -68,3 +67,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # opencode
 export PATH=/Users/peyman627/.opencode/bin:$PATH
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi

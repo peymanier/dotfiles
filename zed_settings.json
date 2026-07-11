@@ -7,13 +7,29 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "base_keymap": "JetBrains",
-  "features": {
-    "edit_prediction_provider": "none",
-    "copilot": false
+  "edit_predictions": {
+    "provider": "none",
   },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "base_keymap": "JetBrains",
   "theme": "One Dark",
   "ui_font_size": 16,
   "buffer_font_size": 17,
-  "vim_mode": true
+  "vim_mode": true,
 }

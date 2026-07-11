@@ -1,9 +1,7 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.editor.enablePreview": false,
     "workbench.statusBar.visible": true,
     "workbench.colorCustomizations": {
@@ -19,8 +17,6 @@
     },
     "workbench.layoutControl.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "catppuccin.italicComments": false,
-    "catppuccin.italicKeywords": false,
     "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
@@ -36,10 +32,9 @@
     "editor.suggestSelection": "first",
     "editor.find.autoFindInSelection": "never",
     "editor.guides.indentation": false,
-    "editor.fontSize": 15,
+    "editor.fontSize": 14,
     "window.zoomLevel": 0.8,
     "window.commandCenter": false,
-    "chat.commandCenter.enabled": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -340,5 +335,6 @@
     "vim.smartRelativeLine": true,
     "vim.timeout": 500,
     "vim.visualstar": true,
-    "vim.hlsearch": true
+    "vim.hlsearch": true,
+    "zig.zls.enabled": "on"
 }

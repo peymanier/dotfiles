@@ -10,6 +10,7 @@ map Q gq
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 " Find more examples here: https://jb.gg/share-ideavimrc
+set VimEverywhere
 set NERDTree
 set multiple-cursors
 set number
@@ -76,7 +77,7 @@ vnoremap <Leader>p "_dP
 " lsp
 nnoremap grn :action RenameElement<CR>
 nnoremap gra :action ShowIntentionActions<CR>
-nnoremap grr :action FindUsages<CR>
+nnoremap grf :action FindUsages<CR>
 
 sethandler <S-CR> a:ide
 sethandler <S-Left> a:ide
@@ -109,3 +110,5 @@ sethandler <C-T> a:ide
 sethandler <C-V> a:vim
 sethandler <C-W> a:ide
 sethandler <C-Y> a:ide
+sethandler <Tab> a:ide
+sethandler <S-Tab> a:ide

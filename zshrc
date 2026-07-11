@@ -23,14 +23,24 @@ antigen bundle Aloxaf/fzf-tab
 # Tell Antigen that you're done.
 antigen apply
 
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 alias pip=pip3
 alias python=python3
+
+# Accept fzf-tab selection with Ctrl+Y (Enter still works by default)
+zstyle ':fzf-tab:*' fzf-bindings 'ctrl-y:accept'
 
 export GOROOT="/usr/local/go"
 export GOPATH="/Users/peyman627/go"
 export GOBIN=$(go env GOPATH)/bin
 
 export PATH=${PATH}:/usr/local/mysql/bin/
+
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
 
 # homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -67,4 +77,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # opencode
 export PATH=/Users/peyman627/.opencode/bin:$PATH
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+
+export PATH=$PATH:/Users/peyman627/.local/bin
+
+# zig
+export PATH=$PATH:$HOME/Library/zig/0.17.0-dev.1099+7db2ef610
+
